@@ -1,0 +1,17 @@
+{
+  "name": "nodepostgres",
+  "version": "1.0.0",
+  "description": "Conectar base de datos postgres con nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CamiloV",
+  "license": "ISC",
+  "devDependencies": {
+    "pg": "^7.6.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.3"
+  }
+}
