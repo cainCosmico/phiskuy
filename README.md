@@ -1,2 +1,3 @@
 # Dependencias
 pg
+electron
