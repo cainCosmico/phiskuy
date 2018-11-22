@@ -15,14 +15,15 @@ function randomBar(date, lastClose) {
 
 var dateFormat = 'MMMM DD YYYY';
 var date = moment('April 01 2017', dateFormat);
+console.log('date: ',date);
 
 // -------------------
 var data = [randomBar(date, 30)];
-console.log(data);
+console.log('Data: ',data);
 
 
 var labels = [date];
-console.log(labels);
+console.log('labels: ',labels);
 
 
 while (data.length < 60) {
@@ -32,6 +33,14 @@ while (data.length < 60) {
       labels.push(date);
    }
 }
+
+
+console.log('labels:: ', labels);
+console.log('data:: ', data);
+
+// var date2 = new Date('02 Feb 1996 03:04:05 GMT');
+// console.log(date2.valueOf());
+// expected output: 823230245000
 
 var ctx = document.getElementById('source').getContext('2d');
 

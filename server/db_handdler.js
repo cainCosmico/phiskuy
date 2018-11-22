@@ -9,16 +9,7 @@ const databaseConfig = {
     port: 5432,
 }
 
-// const databaseConfig =
-// {
-//   user: process.env.PGUSER,
-//   password: process.env.PGPASSWORD,
-//   host: process.env.PGHOST,
-//   database: 'lakiy',
-//   port: 5432
-// }
-
-exports.module = class DBHanddler {
+module.exports = class DBHanddler {
     constructor() {
         this.queryResults = new Map();
     }
@@ -46,7 +37,7 @@ exports.module = class DBHanddler {
 //     startDate: '1-06-2018',
 //     endDate: '30-06-2018'
 // }
-
+// Hacer consulta a db
 // var bd = new DBHanddler();
 // bd.MakeQuery(bd.setQuery(args)).then( res => {
 //     console.log(res[0])
