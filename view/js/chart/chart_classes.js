@@ -15,7 +15,7 @@ class ChartManager {
       var re = /\//g;
       this.fechaI = document.getElementById('datepickerI').value.replace( re,'-' );
       this.fechaF = document.getElementById('datepickerF').value.replace( re,'-' );
-      // console.log(this.fechaI, this.fechaF);
+      console.log(this.fechaI, this.fechaF);
    }
 
    
